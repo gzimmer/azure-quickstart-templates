@@ -28,7 +28,7 @@
     }
   },
   "variables": {
-    "vmSize": "[concat('Standard_', parameters('storageSettings').vmSeries, '1')]",
+    "vmSize": "[concat('Standard_', parameters('storageSettings').vmSeries, '1_v2')]",
     "securityGroupName": "jumpboxNSG"
   },
   "resources": [
