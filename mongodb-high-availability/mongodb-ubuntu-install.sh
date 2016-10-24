@@ -190,7 +190,7 @@ install_mongodb()
 	
 	#Install Mongo DB
 	log "Installing MongoDB package $PACKAGE_NAME"
-	apt-get -y install $PACKAGE_NAME
+	apt-get -y --force-yes install $PACKAGE_NAME
 	
 	# Stop Mongod as it may be auto-started during the above step (which is not desirable)
 	stop_mongodb
